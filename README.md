@@ -1,6 +1,6 @@
 # Comparative Analysis of Word Representation Techniques with Classical Machine Learning and Deep Learning Models for Multiclass Text Classification
 
-This repository presents a comprehensive, systematic comparative study of different word representation techniques combined with classical machine learning and deep learning models for multiclass text classification. The project investigates how various text vectorization methods—ranging from sparse statistical representations to dense neural embeddings—impact classification performance, computational efficiency, and model robustness across a diverse set of classifiers.
+This repository presents a comprehensive, systematic comparative study of different word representation techniques combined with classical machine learning and deep learning models for multiclass text classification. The project investigates how various text vectorization methods, ranging from sparse statistical representations to dense neural embeddings, impact classification performance, computational efficiency, and model robustness across a diverse set of classifiers.
 
 The work includes exploratory data analysis (EDA), text preprocessing, feature engineering, hyperparameter tuning, model training, and thorough evaluation. All experimental results and detailed discussions are documented in the accompanying research paper included in this repository.
 
@@ -48,14 +48,14 @@ Text classification is a fundamental task in Natural Language Processing (NLP) w
 
 This project provides a rigorous comparative analysis of four distinct word representation techniques:
 
-1. **Bag-of-Words (BoW)** – a sparse, count-based representation.
-2. **TF-IDF** – a normalized frequency representation that down-weights common terms.
-3. **GloVe** – pre-trained static dense embeddings based on global word co-occurrence statistics.
-4. **Skip-gram (Word2Vec)** – task-specific dense embeddings trained from scratch on the given dataset.
+1. **Bag-of-Words (BoW)** , a sparse, count-based representation.
+2. **TF-IDF** , a normalized frequency representation that down-weights common terms.
+3. **GloVe** , pre-trained static dense embeddings based on global word co-occurrence statistics.
+4. **Skip-gram (Word2Vec)** , task-specific dense embeddings trained from scratch on the given dataset.
 
 These representations are evaluated across a wide spectrum of models, from simple linear classifiers (Logistic Regression, Naive Bayes) to ensemble methods (Random Forest) and advanced deep learning architectures (DNN, RNN, GRU, LSTM, and their bidirectional variants). The goal is to identify which combinations yield optimal performance in terms of accuracy, F1-score, and computational efficiency for multiclass text classification.
 
-The best performing configuration—**Skip-gram embeddings with a Deep Neural Network**—achieved an accuracy of 67.85% and a macro F1-score of 67.24%, outperforming all other combinations.
+The best performing configuration, **Skip-gram embeddings with a Deep Neural Network**, achieved an accuracy of 67.85% and a macro F1-score of 67.24%, outperforming all other combinations.
 
 ---
 
@@ -107,7 +107,7 @@ The dataset used in this project consists of a large collection of labeled text 
 
 - No missing values in either training or testing sets.
 - Class distribution is nearly uniform (approximately 10% per class), making it suitable for multi-class classification without severe class imbalance issues.
-- Documents vary in length; the majority contain between 200–700 characters and 30–120 words.
+- Documents vary in length; the majority contain between 200 and 700 characters and 30 to 120 words.
 - A long tail of longer documents (over 1,000 words) exists, providing variety and challenge for sequence-based models.
 
 The dataset is not included in this repository due to size constraints. To reproduce the experiments, place your own CSV file with `text` and `label` columns, or update the data loading paths in the notebooks accordingly.
@@ -169,7 +169,7 @@ After preprocessing, the clean text is transformed into numerical feature vector
 - **Advantages:** Simple, fast, interpretable, and works well for many baseline tasks.
 - **Disadvantages:** High-dimensional sparse vectors, no semantic information, cannot capture word order or context.
 
-### TF-IDF (Term Frequency–Inverse Document Frequency)
+### TF-IDF (Term Frequency-Inverse Document Frequency)
 
 - **Description:** An extension of BoW that scales word frequencies by the inverse of the number of documents containing that word. This reduces the weight of common words (e.g., "the", "a") and increases the weight of rare but informative words.
 - **Implementation:** Scikit-learn's `TfidfVectorizer` with `max_features=10000`, `ngram_range=(1,2)`, and `sublinear_tf=True` to use log scaling.
@@ -467,4 +467,3 @@ Email: md.rumman.shahriar@g.bracu.ac.bd
 Email: mehrabul.islam@g.bracu.ac.bd  
 
 For questions, issues, or collaboration inquiries, please open an issue in this GitHub repository or contact the authors directly via email.
-
