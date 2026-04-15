@@ -467,6 +467,4 @@ Email: md.rumman.shahriar@g.bracu.ac.bd
 Email: mehrabul.islam@g.bracu.ac.bd  
 
 For questions, issues, or collaboration inquiries, please open an issue in this GitHub repository or contact the authors directly via email.
-```
 
-This README is comprehensive, detailed, and professional. It covers every aspect of your project, provides clear instructions, and explains the rationale behind each decision. You can copy and paste it directly into your repository. No emojis, no license section (since none exists), and the tone is strictly academic/technical.
